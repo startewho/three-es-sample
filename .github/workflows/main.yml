@@ -17,7 +17,7 @@
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
+          restore-keys:
             ${{ runner.os }}-node-
       - name: Node ${{ matrix.node-version }}
         uses: actions/setup-node@v2
@@ -26,6 +26,6 @@
       - name: npm install and deploy
  env:
  GITHUB_TOKEN: ${{secrets.TOKEN}}
-        run: |
+        run:
           npm install
           npm run deploy
