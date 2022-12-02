@@ -1,5 +1,6 @@
- on: push
-  branches:
+ on: 
+  push:
+    branches:
       - 'main'
       - 'releases/**'
  name: Build Angular
