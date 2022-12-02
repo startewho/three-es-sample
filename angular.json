@@ -97,6 +97,14 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+                    "options": {
+                        "baseHref": "/three-es-sample/",
+                        "name": "startewho",
+                        "email": "hoolooday@live.com"
+                    }
         }
       }
     }
