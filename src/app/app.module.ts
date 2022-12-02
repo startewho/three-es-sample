@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {  RouterModule} from "@angular/router";
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { SimpleSceneComponent } from './simple-scene/simple-scene.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -11,10 +11,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSliderModule } from '@angular/material/slider';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    SimpleSceneComponent,
-  ],
+  declarations: [AppComponent, SimpleSceneComponent],
   imports: [
     BrowserModule,
     RouterModule,
@@ -23,9 +20,9 @@ import { MatSliderModule } from '@angular/material/slider';
     MatInputModule,
     FormsModule,
     MatCheckboxModule,
-    MatSliderModule
+    MatSliderModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
