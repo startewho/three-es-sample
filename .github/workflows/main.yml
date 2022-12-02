@@ -10,10 +10,8 @@
     strategy:
       matrix:
         node-version: [19.x]
- ​
     steps:
       - uses: actions/checkout@v2
- ​
       - name: Cache node modules
         uses: actions/cache@v2
         with:
