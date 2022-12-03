@@ -10,12 +10,12 @@ import { PerspectiveCamera, PlaneGeometry, MeshBasicMaterial, TextureLoader, Mes
 export class SimpleSceneComponent implements OnInit, AfterViewInit {
 
   private textureSources:string[] = [
-    '/assets/images/captainamerica.jpg',
-    '/assets/images/flash.jpg',
-    '/assets/images/harleyqueen.jpg',
-    '/assets/images/robin.jpg',
-    '/assets/images/spiderman-ironman.jpg',
-    '/assets/images/superman-batman.jpg',
+    './assets/images/captainamerica.jpg',
+    './assets/images/flash.jpg',
+    './assets/images/harleyqueen.jpg',
+    './assets/images/robin.jpg',
+    './assets/images/spiderman-ironman.jpg',
+    './assets/images/superman-batman.jpg',
     '/assets/images/thor.jpg',
   ]
 
