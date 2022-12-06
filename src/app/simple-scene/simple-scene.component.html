@@ -1,156 +1,158 @@
-<canvas #canvas id="canvas"></canvas>
+<div class="content">
+  <div id="sidebar">
+    <mat-label class="fullWidth">Position X</mat-label>
+    <mat-slider
+      class="fullWidth"
+      discrete="true"
+      value="imagePlane.position.x"
+      min="-2"
+      max="3"
+      step="0.1"
+    >
+      <input
+        matSliderThumb
+        (valueChange)="updateImagePlane($event, 'position', 'x')"
+      />
+    </mat-slider>
 
-<div id="sidebar">
-  <mat-label class="fullWidth">Position X</mat-label>
-  <mat-slider
-    class="fullWidth"
-    discrete="true"
-    value="imagePlane.position.x"
-    min="-2"
-    max="3"
-    step="0.1"
-  >
-    <input
-      matSliderThumb
-      (valueChange)="updateImagePlane($event, 'position', 'x')"
-    />
-  </mat-slider>
+    <mat-label class="fullWidth">Position Y</mat-label>
+    <mat-slider
+      class="fullWidth"
+      discrete="true"
+      value="imagePlane.position.y"
+      min="-2"
+      max="3"
+      step="0.1"
+      ><input
+        matSliderThumb
+        (valueChange)="updateImagePlane($event, 'position', 'y')"
+    /></mat-slider>
 
-  <mat-label class="fullWidth">Position Y</mat-label>
-  <mat-slider
-    class="fullWidth"
-    discrete="true"
-    value="imagePlane.position.y"
-    min="-2"
-    max="3"
-    step="0.1"
-    ><input
-      matSliderThumb
-      (valueChange)="updateImagePlane($event, 'position', 'y')"
-  /></mat-slider>
+    <mat-label class="fullWidth">Position Z</mat-label>
+    <mat-slider
+      class="fullWidth"
+      discrete="true"
+      value="imagePlane.position.z"
+      min="-200"
+      max="300"
+      step="10"
+      ><input
+        matSliderThumb
+        (valueChange)="updateImagePlane($event, 'position', 'z')"
+    /></mat-slider>
 
-  <mat-label class="fullWidth">Position Z</mat-label>
-  <mat-slider
-    class="fullWidth"
-    discrete="true"
-    value="imagePlane.position.z"
-    min="-200"
-    max="300"
-    step="10"
-    ><input
-      matSliderThumb
-      (valueChange)="updateImagePlane($event, 'position', 'z')"
-  /></mat-slider>
+    <mat-label class="fullWidth">Rotation X</mat-label>
+    <mat-slider
+      class="fullWidth"
+      discrete="true"
+      value="imagePlane.position.x"
+      min="-2"
+      max="3"
+      step="0.1"
+      ><input
+        matSliderThumb
+        (valueChange)="updateImagePlane($event, 'rotation', 'x')"
+    /></mat-slider>
 
-  <mat-label class="fullWidth">Rotation X</mat-label>
-  <mat-slider
-    class="fullWidth"
-    discrete="true"
-    value="imagePlane.position.x"
-    min="-2"
-    max="3"
-    step="0.1"
-    ><input
-      matSliderThumb
-      (valueChange)="updateImagePlane($event, 'rotation', 'x')"
-  /></mat-slider>
+    <mat-label class="fullWidth">Rotation Y</mat-label>
+    <mat-slider
+      class="fullWidth"
+      discrete="true"
+      value="imagePlane.rotation.y"
+      min="-2"
+      max="3"
+      step="0.1"
+      ><input
+        matSliderThumb
+        (valueChange)="updateImagePlane($event, 'rotation', 'y')"
+    /></mat-slider>
 
-  <mat-label class="fullWidth">Rotation Y</mat-label>
-  <mat-slider
-    class="fullWidth"
-    discrete="true"
-    value="imagePlane.rotation.y"
-    min="-2"
-    max="3"
-    step="0.1"
-    ><input
-      matSliderThumb
-      (valueChange)="updateImagePlane($event, 'rotation', 'y')"
-  /></mat-slider>
+    <mat-label class="fullWidth">Rotation Z</mat-label>
+    <mat-slider
+      class="fullWidth"
+      discrete="true"
+      value="imagePlane.rotation.z"
+      min="-2"
+      max="3"
+      step="0.1"
+      ><input
+        matSliderThumb
+        (valueChange)="updateImagePlane($event, 'rotation', 'z')"
+    /></mat-slider>
 
-  <mat-label class="fullWidth">Rotation Z</mat-label>
-  <mat-slider
-    class="fullWidth"
-    discrete="true"
-    value="imagePlane.rotation.z"
-    min="-2"
-    max="3"
-    step="0.1"
-    ><input
-      matSliderThumb
-      (valueChange)="updateImagePlane($event, 'rotation', 'z')"
-  /></mat-slider>
+    <mat-label class="fullWidth">Scale X</mat-label>
+    <mat-slider
+      class="fullWidth"
+      discrete="true"
+      value="imagePlane.scale.x"
+      min="-2"
+      max="3"
+      step="0.1"
+      ><input
+        matSliderThumb
+        (valueChange)="updateImagePlane($event, 'scale', 'x')"
+    /></mat-slider>
 
-  <mat-label class="fullWidth">Scale X</mat-label>
-  <mat-slider
-    class="fullWidth"
-    discrete="true"
-    value="imagePlane.scale.x"
-    min="-2"
-    max="3"
-    step="0.1"
-    ><input
-      matSliderThumb
-      (valueChange)="updateImagePlane($event, 'scale', 'x')"
-  /></mat-slider>
+    <mat-label class="fullWidth">Scale Y</mat-label>
+    <mat-slider
+      class="fullWidth"
+      discrete="true"
+      value="imagePlane.scale.y"
+      min="-2"
+      max="3"
+      step="0.1"
+      ><input
+        matSliderThumb
+        (valueChange)="updateImagePlane($event, 'scale', 'x')"
+    /></mat-slider>
 
-  <mat-label class="fullWidth">Scale Y</mat-label>
-  <mat-slider
-    class="fullWidth"
-    discrete="true"
-    value="imagePlane.scale.y"
-    min="-2"
-    max="3"
-    step="0.1"
-    ><input
-      matSliderThumb
-      (valueChange)="updateImagePlane($event, 'scale', 'x')"
-  /></mat-slider>
+    <mat-label class="fullWidth">Scale Z</mat-label>
+    <mat-slider
+      class="fullWidth"
+      discrete="true"
+      value="imagePlane.scale.z"
+      min="-2"
+      max="3"
+      step="0.1"
+      ><input
+        matSliderThumb
+        (valueChange)="updateImagePlane($event, 'scale', 'z')"
+    /></mat-slider>
 
-  <mat-label class="fullWidth">Scale Z</mat-label>
-  <mat-slider
-    class="fullWidth"
-    discrete="true"
-    value="imagePlane.scale.z"
-    min="-2"
-    max="3"
-    step="0.1"
-    ><input
-      matSliderThumb
-      (valueChange)="updateImagePlane($event, 'scale', 'z')"
-  /></mat-slider>
+    <!-- <mat-form-field class="fullWidth">
+      <mat-label class="fullWidth">Colour</mat-label>
+      <input id="colorPicker" matInput value="materialColour" type="color" [(ngModel)]="materialColour" required placeholder="Placeholder">
+    </mat-form-field> -->
 
-  <!-- <mat-form-field class="fullWidth">
-    <mat-label class="fullWidth">Colour</mat-label>
-    <input id="colorPicker" matInput value="materialColour" type="color" [(ngModel)]="materialColour" required placeholder="Placeholder">
-  </mat-form-field> -->
+    <mat-label class="fullWidth">Rotation Speed X</mat-label>
+    <mat-slider
+      class="fullWidth"
+      discrete="true"
+      value="rotationSpeedX"
+      min="0"
+      max="0.2"
+      step="0.01"
+      ><input
+        matSliderThumb
+        (valueChange)="updateImagePlane($event, 'rotation_speed', 'x')"
+    /></mat-slider>
 
-  <mat-label class="fullWidth">Rotation Speed X</mat-label>
-  <mat-slider
-    class="fullWidth"
-    discrete="true"
-    value="rotationSpeedX"
-    min="0"
-    max="0.2"
-    step="0.01"
-    ><input
-      matSliderThumb
-      (valueChange)="updateImagePlane($event, 'rotation_speed', 'x')"
-  /></mat-slider>
+    <mat-label class="fullWidth">Rotation Speed Y</mat-label>
+    <mat-slider
+      class="fullWidth"
+      discrete="true"
+      value="rotationSpeedY"
+      min="0"
+      max="0.2"
+      step="0.01"
+      ><input
+        matSliderThumb
+        (valueChange)="updateImagePlane($event, 'rotation_speed', 'y')"
+    /></mat-slider>
 
-  <mat-label class="fullWidth">Rotation Speed Y</mat-label>
-  <mat-slider
-    class="fullWidth"
-    discrete="true"
-    value="rotationSpeedY"
-    min="0"
-    max="0.2"
-    step="0.01"
-    ><input
-      matSliderThumb
-      (valueChange)="updateImagePlane($event, 'rotation_speed', 'y')"
-  /></mat-slider>
-
-  <mat-label class="fullWidth">Play animation </mat-label>
-  <mat-checkbox [(ngModel)]="playAnimation"></mat-checkbox>
+    <mat-label class="fullWidth">Play animation </mat-label>
+    <mat-checkbox [(ngModel)]="playAnimation"></mat-checkbox>
+  </div>
+  <canvas #canvas id="canvas"></canvas>
 </div>
+

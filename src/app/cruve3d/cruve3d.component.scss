@@ -1,0 +1,16 @@
+.content {
+    display: flex;
+    flex-flow: row nowrap;
+    #sidebar{
+      width: 350px;
+      margin:0 24px;
+      .fullWidth{
+        width: 300px;
+      }
+    }
+    #canvas {
+      flex: 1;
+      border: #f0f 1px;
+    }
+  }
+  

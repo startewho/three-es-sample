@@ -9,10 +9,14 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSliderModule } from '@angular/material/slider';
-
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
+import { AppRoutingModule } from "./app-routing.module";
+import { Cruve3dComponent } from './cruve3d/cruve3d.component';
 @NgModule({
-  declarations: [AppComponent, SimpleSceneComponent],
+  declarations: [AppComponent, SimpleSceneComponent, Cruve3dComponent],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     RouterModule,
     MatFormFieldModule,
@@ -21,6 +25,8 @@ import { MatSliderModule } from '@angular/material/slider';
     FormsModule,
     MatCheckboxModule,
     MatSliderModule,
+    MatSidenavModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

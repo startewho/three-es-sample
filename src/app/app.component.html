@@ -1,1 +1,14 @@
-<app-simple-scene></app-simple-scene>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav mode="side" #sidenav mode="side" [(opened)]="opened">
+    <mat-list>
+      <a mat-list-item href="/simple"> SampleScence </a>
+      <a mat-list-item href="/cruve3d"> Cruve3D </a>
+      <mat-list-item>
+        <a matLine href="/cruve3d">Cruve3D</a>
+      </mat-list-item>
+    </mat-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

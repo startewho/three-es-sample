@@ -1,20 +1,15 @@
-canvas{
-  position: absolute;
-  top:0;
-  left: 0;
-}
-
-#sidebar{
-  position: fixed;
-  padding: 3%;
-  background-color: rgb(73, 73, 73);
-  height: 100%;
-  top: 0%;
-  left: 0%;
-  width: 20%;
-  z-index: 1;
-}
-
-.fullWidth{
-  width: 100%;
+.content {
+  display: flex;
+  flex-flow: row nowrap;
+  #sidebar{
+    width: 350px;
+    margin:0 24px;
+    .fullWidth{
+      width: 300px;
+    }
+  }
+  #canvas {
+    flex: 1;
+    border: #f0f 1px;
+  }
 }
